@@ -1,0 +1,48 @@
+{
+  "name": "hapi-s3-upload",
+  "version": "1.0.0",
+  "description": "Node.js Hapi AWS S3 upload plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -L -I @@any-promise/REGISTRATION",
+    "coverage": "lab -c -L -I @@any-promise/REGISTRATION -r html -o ./coverage/index.html && opn ./coverage/index.html"
+  },
+  "author": "Glenn Geenen <glenn@geenentijd.be>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlennGeenen/hapi-s3-upload"
+  },
+  "bugs": "https://github.com/GlennGeenen/hapi-s3-upload/issues",
+  "keywords": [
+    "hapi",
+    "plugin",
+    "AWS",
+    "S3",
+    "upload"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
+  "dependencies": {
+    "aws-sdk": "2.x.x"
+  },
+  "peerDependencies": {
+    "boom": "*"
+  },
+  "devDependencies": {
+    "assert": "1.x.x",
+    "eslint": "3.x.x",
+    "eslint-config-hapi": "10.x.x",
+    "eslint-plugin-hapi": "4.x.x",
+    "form-data": "2.x.x",
+    "hapi": "15.x.x",
+    "lab": "11.x.x",
+    "lolex": "^1.5.1",
+    "nock": "8.x.x",
+    "opn-cli": "3.x.x",
+    "proxyquire": "1.x.x",
+    "stream-to-promise": "2.x.x"
+  }
+}
