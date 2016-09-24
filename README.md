@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/GlennGeenen/hapi-s3-upload.svg?branch=master)](https://travis-ci.org/GlennGeenen/hapi-s3-upload)
 
-This plugin exposes a route to upload files to S3. You POST multipart/form-data.
+This plugin exposes a route to upload a file to S3. You POST file in multipart/form-data.
 
 ## Options
 
