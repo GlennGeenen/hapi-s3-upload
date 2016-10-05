@@ -20,13 +20,12 @@ const getFileName = function (fileName, prependDate) {
   const index = fileName.indexOf('.');
   const file = fileName.substring(0, index);
   const extension = fileName.substring(index);
-  let name = file + '-' + getRandomString() + extension;
+  const name = file + '-' + getRandomString() + extension;
 
-  if (prependDate)
-    return getDateString() + '/' + name;
-  else {
-    return name;
+  if (prependDate) {
+    return getDateSting() + '/' + name;
   }
+  return name;
 };
 
 module.exports = {
