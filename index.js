@@ -48,7 +48,7 @@ exports.register = function (plugin, options, next) {
         return reply(Boom.unsupportedMediaType('Content-type not allowed'));
       }
 
-      const fileKey = Utils.getFileName(file.hapi.filename);
+      const fileKey = Utils.getFileName(file.hapi.filename, options.prependDate || false);
 
       s3.upload({
         Bucket: options.s3Bucket,
