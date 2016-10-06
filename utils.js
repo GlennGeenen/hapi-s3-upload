@@ -15,12 +15,17 @@ const getRandomString = function () {
   return Crypto.randomBytes(8).toString('hex');
 };
 
-const getFileName = function (fileName) {
+const getFileName = function (fileName, prependDate) {
 
   const index = fileName.indexOf('.');
   const file = fileName.substring(0, index);
   const extension = fileName.substring(index);
-  return getDateString() + '/' + file + '-' + getRandomString() + extension;
+  const name = file + '-' + getRandomString() + extension;
+
+  if (prependDate) {
+    return getDateSting() + '/' + name;
+  }
+  return name;
 };
 
 module.exports = {
