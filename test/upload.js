@@ -36,7 +36,8 @@ lab.experiment('Upload file', () => {
         s3AccessKey: 'test',
         s3SecretKey: 'test',
         s3Region: 'region',
-        s3Bucket: 'bucket'
+        s3Bucket: 'bucket',
+        prependDate: true
       }
     }, done);
   });

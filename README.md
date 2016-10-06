@@ -13,7 +13,7 @@ This plugin exposes a route to upload a file to S3. You POST file in multipart/f
 - auth: default no auth
 - contentTypes: default ['application/pdf', 'image/jpeg', 'image/png']
 - maxBytes: default 10485760
-- prependDate: default false
+- prependDate: default false (adds DD-MM-YYYY/ when true)
 
 ### Required
 

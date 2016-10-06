@@ -35,9 +35,13 @@ lab.experiment('Utils', () => {
 
   lab.test('getFileName', (done) => {
 
-    const fileName = Utils.getFileName('test.jpg');
+    let fileName = Utils.getFileName('test.jpg', true);
     // Format date/name-random.extension
     Assert(fileName.length === 10 + 2 + 16 + 8);
+
+    fileName = Utils.getFileName('test.jpg', false);
+    // Format name-random.extension
+    Assert(fileName.length === 1 + 16 + 8);
     done();
   });
 });

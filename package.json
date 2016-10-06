@@ -1,6 +1,6 @@
 {
   "name": "hapi-s3-upload",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Node.js Hapi AWS S3 upload plugin",
   "main": "index.js",
   "scripts": {
@@ -26,9 +26,7 @@
     "utils.js"
   ],
   "dependencies": {
-    "aws-sdk": "2.x.x"
-  },
-  "peerDependencies": {
+    "aws-sdk": "2.x.x",
     "boom": "*"
   },
   "devDependencies": {

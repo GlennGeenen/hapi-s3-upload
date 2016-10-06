@@ -23,7 +23,7 @@ const getFileName = function (fileName, prependDate) {
   const name = file + '-' + getRandomString() + extension;
 
   if (prependDate) {
-    return getDateSting() + '/' + name;
+    return getDateString() + '/' + name;
   }
   return name;
 };
